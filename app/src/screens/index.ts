@@ -1,4 +1,4 @@
 export { Chat } from './chat'
-export { Images } from './images'
+export { Network } from './network'
 export { Settings } from './settings'
 export { Assistant } from './assistant'

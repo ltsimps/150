@@ -1,7 +1,7 @@
 import { useContext, useRef, useCallback } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Chat, Images, Settings, Assistant } from './screens'
+import { Chat, Network, Settings, Assistant } from './screens'
 import { Header } from './components'
 import FeatherIcon from '@expo/vector-icons/Feather'
 import {
@@ -58,13 +58,13 @@ function MainComponent() {
           }}
         />
         <Tab.Screen
-          name="Images"
-          component={Images}
+          name="Network"
+          component={Network}
           options={{
             header: () => <Header />,
             tabBarIcon: ({ color, size }) => (
               <FeatherIcon
-                name="image"
+                name="users"
                 color={color}
                 size={size}
               />
